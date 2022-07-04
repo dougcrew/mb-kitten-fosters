@@ -6,8 +6,21 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+}
 .h1 {
   font-family: 'Amatic SC', cursive;
+}
+
+.btn {
+  font-family: 'Amatic SC', cursive;
+}
+
+.title {
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
