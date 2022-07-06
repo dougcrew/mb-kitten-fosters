@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  color: #222224;
+}
 .container {
   display: flex;
 }
@@ -13,14 +20,15 @@
   font-family: 'Amatic SC', cursive;
 }
 
-.btn {
-  font-family: 'Amatic SC', cursive;
-}
-
 .title {
   font-size: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+.navbar-brand {
+  font-family: 'Amatic SC', cursive;
+  text-decoration: #222224;
 }
 
 p {
