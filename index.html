@@ -58,23 +58,241 @@
       </div>
     </nav>
     <!-- HEADER -->
-    <header class="vh-100">
+    <header
+      class="vh-100"
+      style="
+        background: url(images/jack-bramble-fade.jpg) center/cover no-repeat;
+      "
+    >
       <div class="container mt-5 pt-5 h-25">
-        <h1 class="display-1 text-muted font-cursive">Finding Furever Homes</h1>
-        <p class="text-light text-muted" id="subtitle">
+        <h1
+          class="display-1 text-muted font-cursive animate-text-right-2s title"
+        >
+          Finding Furever Homes!
+        </h1>
+        <p class="text-light text-muted animate-text-right" id="subtitle">
           Fostering cats for adpotion in the Coastal Carolinas
         </p>
         <button
-          class="btn btn-lg shadow mt-3 text-info btn_text border border-info rounded"
+          class="btn btn-lg shadow mt-3 text-info bg-white- border border-info rounded"
+          data-bs-toggle="modal"
+          data-bs-target="#becomeFoster"
         >
-          Become a Foster!
+          Become a Foster
         </button>
       </div>
+      <!-- HEADER > GET STARTED CONTENT MODAL -->
+      <div
+        class="modal fade"
+        id="becomeFoster"
+        tabindex="-1"
+        aria-labelledby="becomeFosterLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="becomeFosterLabel">
+                Let's Have a Conversation About Fostering
+              </h5>
+              <button
+                class="button btn-close"
+                type="button"
+                data-bs-dismiss="model"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label class="col-form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ex. Leia"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ex. Organa"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Phone</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Let's have a conversation"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="We'll send an email to set up a time to talk"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button class="btn text-white btn-info" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <!-- HEADER > GET STARTED CONTENT MODEL -->
+
     <!-- ABOUT  -->
-    <!-- ABOUT > ABOUT CONTENT MODEL -->
+    <section id="About" class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="h4 my-5 title2">About Us!</div>
+          <h2 class="display-3 title3">
+            Since Spring of 2020 we have adopted out 300 kittens and counting.
+          </h2>
+        </div>
+      </div>
+      <div class="card border-0 my-3 mx-auto" style="max-width: 1400px">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="https://scontent.fhyw1-1.fna.fbcdn.net/v/t1.6435-9/140553615_212391837247510_2638262372719079709_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=b6op2d9JstAAX_Lo4jU&_nc_ht=scontent.fhyw1-1.fna&oh=00_AT_d6fI57bqP_ZIF-svW2-DN92zVkEGn5YuXat4kFB8LWg&oe=62EC4D0F"
+              alt="about img"
+              class="card-img-top"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body mt-3 p-2 text-center">
+              <h5 class="card-title">WHO WE ARE</h5>
+              <p class="card-text fw-light fs-1 mt-3">
+                We save cats' lives and show them love so they are ready for
+                your family.
+              </p>
+              <button
+                class="btn-lg btn-light mt-3 shadow"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#aboutmodal"
+              >
+                What We D<i
+                  class="bi bi-info-circle"
+                  data-bs-toggle="tooltip"
+                  dtat-bs-placement="right"
+                  title="Learn More..."
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT > ABOUT CONTENT MODAL -->
+    </section>
+
     <!-- TEAM -->
+
+    <section class="container mb-5 pt-4" id="Team">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="font-cursive my-5 title2">Meet Our Team of Fosters</h4>
+          <!-- <h2 class="display-3">Meet Our Fosters</h2> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img src="images/Sarah.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Sarah Crew</h5>
+              <p class="card-text text-info">Co-Founder</p>
+
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info text-white"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="Sarah Crew"
+                data-bs-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, officia odio ullam illum delectus odit dolor labore? Ipsam illo, repudiandae aliquid tenetur, maxime aut magni tempore quidem consequuntur adipisci corporis!"
+                >About Sarah</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img src="images/Amy.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Amy DeProft</h5>
+              <p class="card-text text-info">Co-Founder</p>
+
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info text-white"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="Amy DeProft"
+                data-bs-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, officia odio ullam illum delectus odit dolor labore? Ipsam illo, repudiandae aliquid tenetur, maxime aut magni tempore quidem consequuntur adipisci corporis!"
+                >About Amy</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img src="images/Amanda.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Amanda Holzmer</h5>
+              <p class="card-text text-info">Foster</p>
+
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info text-white"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="Amanda Holzmer"
+                data-bs-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, officia odio ullam illum delectus odit dolor labore? Ipsam illo, repudiandae aliquid tenetur, maxime aut magni tempore quidem consequuntur adipisci corporis!"
+                >About Amanda</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-sm-3">
+          <div class="card shadow" style="width: 18rem">
+            <img src="images/Jaime.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Jaime Hought</h5>
+              <p class="card-text text-info">Foster & Vet Tech</p>
+
+              <a
+                tabindex="0"
+                class="btn btn-sm btn-info text-white"
+                role="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="Jaime Hought"
+                data-bs-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, officia odio ullam illum delectus odit dolor labore? Ipsam illo, repudiandae aliquid tenetur, maxime aut magni tempore quidem consequuntur adipisci corporis!"
+                >About Jaime</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FOOTER -->
 
     <!-- JavaScript Bundle with Popper -->
@@ -83,5 +301,20 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <!-- Script for Tooltips -->
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <!-- Script for Popovers -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
