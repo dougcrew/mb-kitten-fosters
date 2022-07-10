@@ -82,4 +82,7 @@ p {
   object-fit: cover;
 }
 
+#contactForm {
+  background-color: rgba(77, 202, 240, 0.2);
+}
 /* MODAL */
