@@ -50,12 +50,20 @@ p {
   font-weight: 300;
 }
 
+.logo {
+  opacity: 0.8;
+}
+
 .animate-text-right {
   animation: animateText 1s ease;
 }
 
 .animate-text-right-2s {
   animation: animateText 2s ease;
+}
+
+.animate-text-right-3s {
+  animation: animateText 3s ease;
 }
 
 @keyframes animateText {
